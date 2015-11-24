@@ -1,2 +1,5 @@
-# feevale-sistemas-distribuidos-2015
-Word counter REST Service application.
+# Feevale Word Counter
+
+Counts occurrence of words on a text through a REST Service.
+
+Created for Feevale University Distributed Systems Course on year 2015.
