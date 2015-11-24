@@ -1,4 +1,4 @@
-# Feevale Word Counter
+# REST Word Counter
 
 Counts occurrence of words on a text through a REST Service.
 
