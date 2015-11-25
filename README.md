@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/paulodiovani/feevale-sistemas-distribuidos-2015.svg)](https://travis-ci.org/paulodiovani/feevale-sistemas-distribuidos-2015)
+
 # REST Word Counter
 
 Counts occurrence of words on a text through a REST Service.
