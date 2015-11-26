@@ -48,3 +48,15 @@ describe 'Index', ->
           search: word_search
           ocurrences: 2
         }, done)
+
+    it 'only counts entire words', (done) ->
+      word_search = 'et'
+      request(app)
+        .post('/')
+        .type('form')
+        .send(content: @dummy, search: word_search)
+        .expect('Content-Type', /json/)
+        .expect(200, {
+          search: word_search
+          ocurrences: 1
+        }, done)
