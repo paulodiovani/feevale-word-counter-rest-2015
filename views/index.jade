@@ -1,5 +1,39 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 REST Word Counter
+  p Count the ocurrences of words.
+
+  h2 Usage
+
+  h3 Count words on a text
+
+  code POST #{fullUrl}
+
+  h4 Parameters
+
+  dl
+    dt content
+    dd The text content for searching
+
+    dt search
+    dd The word to search in content
+
+  h4 Response
+
+  h5 Headers
+
+  code Content-type: application/json
+
+  h5 Body
+
+  pre: code.
+    {
+      "search": "foobar",
+      "ocurrences": 42
+    }
+
+
+  h4 Test with <code>curl</code>
+
+  code curl -d 'content=Lorem Ipsum&search=lorem' #{fullUrl}

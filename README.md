@@ -15,3 +15,9 @@ PORT=3000 DEBUG='rest-word-counter:*' npm start
 ```
 
 Access `http://localhost:3000`.
+
+## Testing
+
+```console
+npm test
+```
