@@ -29,8 +29,8 @@ describe 'Index', ->
       word_search = 'elit'
       request(app)
         .post('/')
-        .field('content', @dummy)
-        .field('search', word_search)
+        .type('form')
+        .send(content: @dummy, search: word_search)
         .expect('Content-Type', /json/)
         .expect(200, {
           search: word_search
@@ -41,8 +41,8 @@ describe 'Index', ->
       word_search = 'lorem'
       request(app)
         .post('/')
-        .field('content', @dummy)
-        .field('search', word_search)
+        .type('form')
+        .send(content: @dummy, search: word_search)
         .expect('Content-Type', /json/)
         .expect(200, {
           search: word_search
