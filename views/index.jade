@@ -19,6 +19,21 @@ block content
     dt search
     dd The word to search in content
 
+  h4 Response
+
+  h5 Headers
+
+  code Content-type: application/json
+
+  h5 Body
+
+  pre: code.
+    {
+      "search": "foobar",
+      "ocurrences": 42
+    }
+
+
   h4 Test with <code>curl</code>
 
   code curl -d 'content=Lorem Ipsum&search=lorem' #{fullUrl}
