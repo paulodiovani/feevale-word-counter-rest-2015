@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/paulodiovani/feevale-sistemas-distribuidos-2015.svg)](https://travis-ci.org/paulodiovani/feevale-sistemas-distribuidos-2015)
+[![Build Status](https://travis-ci.org/paulodiovani/feevale-word-counter-rest-2015.svg)](https://travis-ci.org/paulodiovani/feevale-word-counter-rest-2015)
 
 # REST Word Counter
 
