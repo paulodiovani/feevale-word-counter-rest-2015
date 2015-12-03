@@ -11,11 +11,12 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
   var search  = req.body.search,
       content = req.body.content,
-      re      = new RegExp('\\b' + req.body.search + '\\b', 'gi');
+      re      = new RegExp('\\b' + req.body.search + '\\b', 'gi'),
+      matches = content.match(re);
 
   res.json({
     search: search,
-    ocurrences: content.match(re).length
+    ocurrences: (matches !== null) ? matches.length : 0
   });
 });
 
