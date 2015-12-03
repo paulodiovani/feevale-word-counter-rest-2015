@@ -60,3 +60,16 @@ describe 'Index', ->
           search: word_search
           ocurrences: 1
         }, done)
+
+    it 'return 0 ocurrents if does not match search', (done) ->
+      @dummy      = 'not matching text'
+      word_search = 'lorem'
+      request(app)
+        .post('/')
+        .type('form')
+        .send(content: @dummy, search: word_search)
+        .expect('Content-Type', /json/)
+        .expect(200, {
+          search: word_search
+          ocurrences: 0
+        }, done)
